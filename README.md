@@ -63,6 +63,23 @@ Atau via command line (butuh Android SDK ter-set di `local.properties`):
 # APK: app/build/outputs/apk/debug/app-debug.apk
 ```
 
+### Build di Cloud lewat GitHub Actions (tanpa Android SDK lokal) ☁️
+
+Nggak punya Android SDK di komputer? Build APK-nya langsung di GitHub — runner-nya udah
+punya Android SDK. Workflow-nya ada di [`.github/workflows/android-build.yml`](.github/workflows/android-build.yml).
+
+Cara pakai:
+1. Buka tab **Actions** di repo GitHub lo.
+2. Pilih workflow **"Build Android APK"** ▸ klik **Run workflow** (atau otomatis jalan tiap push ke `main`).
+3. Tunggu build selesai (centang hijau ✅).
+4. Buka run tersebut ▸ scroll ke bagian **Artifacts** ▸ download **`wireguard-vpn-debug-apk`** (berupa `.zip`).
+5. Extract zip-nya → dapat `app-debug.apk`.
+
+**Install APK ke HP:**
+- Transfer `app-debug.apk` ke HP (USB / Google Drive / email).
+- Buka file-nya di HP ▸ izinkan **"Install from unknown sources"** ▸ Install.
+- Buka app ▸ tempel WireGuard config ▸ Connect. ✅
+
 ### Menghubungkan
 1. Siapkan server WireGuard lo:
    - **Umum (VPS apa pun):** [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md)
