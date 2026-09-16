@@ -64,7 +64,9 @@ Atau via command line (butuh Android SDK ter-set di `local.properties`):
 ```
 
 ### Menghubungkan
-1. Siapkan server WireGuard lo — ikuti [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md).
+1. Siapkan server WireGuard lo:
+   - **Umum (VPS apa pun):** [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md)
+   - **Gratis buat tes (Google Cloud):** [`docs/GOOGLE_CLOUD_SETUP.md`](docs/GOOGLE_CLOUD_SETUP.md)
 2. Salin **client config** dari panduan itu.
 3. Buka aplikasi ▸ tempel config ▸ **Connect** ▸ setujui dialog izin VPN Android.
 4. Verifikasi: buka `https://ifconfig.me` di browser HP — IP harus jadi IP VPS lo.
