@@ -53,6 +53,7 @@ object VpnManager {
                 val config = parseConfig(rawConfig)
                 getBackend(context).setState(tunnel, Tunnel.State.UP, config)
                 Log.i(TAG, "Tunnel brought UP")
+                Unit
             }.onFailure { Log.e(TAG, "connect() failed", it) }
         }
 
@@ -61,6 +62,7 @@ object VpnManager {
             runCatching {
                 getBackend(context).setState(tunnel, Tunnel.State.DOWN, null)
                 Log.i(TAG, "Tunnel brought DOWN")
+                Unit
             }.onFailure { Log.e(TAG, "disconnect() failed", it) }
         }
 
