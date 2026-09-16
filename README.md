@@ -1,4 +1,4 @@
-# WireGuard VPN — Android (Belajar / Portfolio)
+# WireGuard VPN — Android (Beta)
 
 Aplikasi VPN Android sederhana yang **jalan beneran**, memakai library resmi WireGuard
 (`com.wireguard.android:tunnel`) dan `VpnService` Android. Dibuat untuk **belajar & portfolio**,
