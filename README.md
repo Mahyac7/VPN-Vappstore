@@ -83,7 +83,8 @@ Cara pakai:
 ### Menghubungkan
 1. Siapkan server WireGuard lo:
    - **Umum (VPS apa pun):** [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md)
-   - **Gratis buat tes (Google Cloud):** [`docs/GOOGLE_CLOUD_SETUP.md`](docs/GOOGLE_CLOUD_SETUP.md)
+   - **DigitalOcean (mudah, tanpa bayar di muka):** [`docs/DIGITALOCEAN_SETUP.md`](docs/DIGITALOCEAN_SETUP.md) ⭐
+   - **Google Cloud free tier:** [`docs/GOOGLE_CLOUD_SETUP.md`](docs/GOOGLE_CLOUD_SETUP.md)
 2. Salin **client config** dari panduan itu.
 3. Buka aplikasi ▸ tempel config ▸ **Connect** ▸ setujui dialog izin VPN Android.
 4. Verifikasi: buka `https://ifconfig.me` di browser HP — IP harus jadi IP VPS lo.
